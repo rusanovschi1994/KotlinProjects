@@ -13,7 +13,9 @@ fun main(){
     println("The perimeter of rectangle = ${rectangle1.perimeter}")
 
     var rectangle2 = Rectangle(10.0, 21.0)
-    print(rectangle1 == rectangle2)
+    println(rectangle1 == rectangle2)
+    println("Rectangle area is ${rectangle2.area()}")
+
 }
 
 //Primary constructor
@@ -48,7 +50,5 @@ data class Rectangle(var height: Double, var length: Double){
         }
 
     //functie(metoda) in clasa
-    fun area(){
-        height * length
-    }
+    fun area() = height * length
 }
